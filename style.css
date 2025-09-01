@@ -1,0 +1,169 @@
+*{margin: 0;
+padding: 0;}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float:right;
+}
+.img{
+    max-width: 100%;
+}
+.a{
+    text-decoration: none;
+}
+.mid-content{
+    min-width: 100%;
+    margin: auto;
+}
+
+
+/* Begain Mian CSS */
+
+
+.header-section{
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    padding: 7px 0;
+}
+
+.header-logo{
+    width: 30%;
+}
+.logo img{
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 13px;
+}
+.logo span{
+   display: inline-block;
+   margin-top: 15px;
+   font-size: 30px;
+   font-weight: 500;
+}
+.header-menu{
+    width: 53%;
+}
+.header-button{
+    width: 17%;
+}
+.header-btn{
+    border: 2px solid #6278df;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 8px;
+    color: #6278df !important;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.primary-menu{
+
+}
+.primary-menu ul{}
+.primary-menu ul li{
+    display: inline-block;
+    padding: 17px 13px;
+    margin-top: 7px;
+}
+.primary-menu ul li a{
+    display: block;
+    text-decoration: none;
+}
+.primary-menu ul li a:hover{}
+
+/* Droup Down Menu CSS */
+
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul li a{
+    color: #fff;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    left: 5px;
+    top: 75%;
+   
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.primary-menu ul li ul li{
+    height: .5px;
+}
+
+.primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    z-index: 10;
+}
+
+/* Banner CSS */
+.banner-section{
+    background: url(Images/mbr-4.jpg) no-repeat center center;
+    padding: 190px 0;
+    background-size: cover;
+    color: #fff;
+    border-bottom: 1px solid gray;
+    position: relative;
+    z-index: 9;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, .3);
+    z-index: -1;
+}
+.banner-content{}
+.banner-content h3{
+    font-size: 27px;
+    font-weight: 400;
+    color: black;
+}
+.banner-content h2{
+    font-size: 70px;
+    margin-top: -7px;
+    /* margin: 7px 0; */
+    color: darkblue;
+}
+
+.default-btn{
+    color: #7d7d7d;
+    padding: 20px 30px;
+    background: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 27px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
